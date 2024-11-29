@@ -1,4 +1,6 @@
-﻿namespace Tests;
+﻿using Task = Domain.Entities.Task;
+
+namespace Tests;
 
 public class TaskTest
 {
@@ -48,8 +50,19 @@ public class TaskTest
            with the data and environment prepared during the Arrange phase.
          */
 
-        Task task = new();
+        Task task = new(Title, DueDate, Priority, Description, Labels);
 
+        #endregion
+
+        #region Assert
+
+        /* Brief explanation
+         
+        
+
+
+
+        */
         #endregion
     }
 }
